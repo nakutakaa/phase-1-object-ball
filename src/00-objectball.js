@@ -128,11 +128,11 @@ function getGameData(inputObject, currentPath = "", output = []) {
   return output;
 }
 function numPointsScored(gameObject, playerName) {
-  // Check the home team players
+  // to check the home team players
   if (gameObject.home.Players[playerName]) {
     return gameObject.home.Players[playerName].points;
   }
-  // Check the away team players
+  // to check the away team players
   else if (gameObject.away.players[playerName]) {
     return gameObject.away.players[playerName].points;
   }
@@ -174,7 +174,7 @@ function teamColors(gameObject, teamName) {
   }
 }
 console.log(teamColors(gameObject,'Charlotte_Hornets'));
-console.log(teamColors(gameObject,teamName))
+console.log(teamColors(gameObject, "Charlotte_Hornets"));
 console.log(teamColors(gameObject, 'Charlotte_Hornets'));
 function TeamNames(gameObject) {
   // Extraction of team names from the home and away objects
